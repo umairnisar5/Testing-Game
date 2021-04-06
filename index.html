@@ -61,5 +61,36 @@
         <button id="btn" class="mainbtn">Start</button>
       </div>
     </div>
+
+    <script>
+
+const setOfWords = [
+    "The purpose of our lives is to be happy",
+    "Get busy living or get busy dying",
+    "You only live once, but if you do it right, once is enough",
+    "If you want to live a happy life",
+    "In order to write about life first you must live it",
+    "The unexamined life is not worth living",
+    "Turn your wounds into wisdom"
+];
+
+const msg = document.getElementById("msg");
+const typeWord = document.getElementById("mywords")
+const btn = document.getElementById("btn");
+let startTime , endTime;
+
+playGame = () => {
+    let randomNumber = Math.floor(Math.random()*setOfWords.length);
+}
+
+
+btn.addEventListener("click", function() {
+    if(this.innerText == "Start") {
+        typeWord.disabled = false;
+        playGame();
+    }
+})
+
+    </script>
   </body>
 </html>
